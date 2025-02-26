@@ -1,0 +1,21 @@
+
+
+.button-primary{
+	background-color: $orange;
+	padding: 10px !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $white;
+}
+
+.button-secondary{
+	border: 1px solid $orange;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $orange;
+	font-weight: 400;
+	background-color: transparent !important;
+}

@@ -20,7 +20,7 @@
           <h2 class="place__title">Explore Our Popular Destinantions</h2>
           <div class="place__icons">
             <UiIcons
-              class="place__icon prev-img"
+              class="place__icon prev-card"
               icon="chevron"
               size="size-20"
               color="black"
@@ -29,7 +29,7 @@
               icon="chevron"
               size="size-20"
               color="black"
-              class="place__icon down next-img"
+              class="place__icon down next-card"
             ></UiIcons>
           </div>
         </div>
@@ -38,8 +38,8 @@
           <UiSwiper
             :loop="true"
             :autoplay="true"
-            next-btn-class=".next-img"
-            prev-btn-class=".prev-img"
+            next-btn-class=".next-card"
+            prev-btn-class=".prev-card"
             :perSlides="4"
           >
             <swiper-slide v-for="card in 5" :key="card">
@@ -49,6 +49,10 @@
         </div>
       </div>
     </section>
+
+    <div class="field">
+      <div class="field__wrapper"><TheForm /></div>
+    </div>
   </div>
 </template>
 
@@ -64,7 +68,7 @@
 }
 .preview {
   &__wrapper {
-    height: 90vh;
+    height: 100vh;
   }
   &__image {
     position: absolute;

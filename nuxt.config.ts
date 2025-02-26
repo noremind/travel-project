@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
 	modules: [ 
 		"nuxt-swiper",
+		"@primevue/nuxt-module",
 	],
 	components: {
     global: true,
@@ -22,6 +23,8 @@ export default defineNuxtConfig({
 	css: [
     "@/assets/scss/normalize.scss",
     "@/assets/scss/icons.scss",
+    "@/assets/scss/index.scss",
+		"@/assets/scss/primevue/index.scss",
   ],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false }
